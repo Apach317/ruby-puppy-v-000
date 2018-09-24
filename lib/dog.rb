@@ -10,7 +10,7 @@ class Dog
   end
 
   def self.clear_all
-    @@all.delete_if{|dog| dog !=""}
+    @@all.delete_if{|dog| dog != ""}
   end
 
   def self.all
