@@ -1,5 +1,5 @@
 class Dog
-  
+
   @@all = []
 
   attr_accessor :doggy
@@ -13,4 +13,3 @@ class Dog
     @@all
   end
 end
-    
