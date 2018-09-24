@@ -10,11 +10,11 @@ class Dog
   end
 
   def self.clear_all
-    @@all.delete_if{|doggy| doggy !=""}
+    @@all.delete_if{|dog| dog !=""}
   end
 
   def self.all
-    @@all.each do |pup|
+    @@all.each do |dog|
       puts pup.name
     end
   end
