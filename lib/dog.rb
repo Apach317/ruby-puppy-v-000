@@ -1,13 +1,17 @@
 class Dog
 
-  @@all = {}
+  @@all = []
 
-  attr_accessor :doggy
+  attr_accessor :name
 
-  def initializes(doggy)
-    @doggy = doggy
+  def initializes(name)
+    @name = name
     @@all << self
   end
+
+  def self.clear_all
+    @@all.delete_if{|doggy| doggy !=""}
+
 
   def self.all
     @@all
