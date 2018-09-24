@@ -11,7 +11,7 @@ class Dog
 
   def self.clear_all
     @@all.delete_if{|doggy| doggy !=""}
-
+  end
 
   def self.all
     @@all.each do |pup|
